@@ -1,0 +1,58 @@
+body {
+    background-color:silver;
+}
+
+h1#aboutme {
+    color: red;
+    text-align:center;
+}
+h2 {
+    color: green;
+}
+
+p#introduce{
+    font-style: italic;
+   /*font-weight: bolder;*/
+    font-size: 1.2em;
+    font-family: "Trebuchet MS","Courier New", Verdana;
+    border: 2px dotted yellow;
+    border-radius:10px;
+}
+
+ul.funfact{
+    font:  oblique 1em Georgia;
+}
+
+.img_validator {
+    width: 90px;
+    height: 40px;
+}
+
+a:link{
+    color: #FFFF00;
+}
+a:visited{
+    color:#FF00FF;
+}
+a:hover{
+    color:#FF0000;
+    font-style:italic;
+}
+a:active{
+    color:#0000FF;
+}
+
+p#introduce::first-letter{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+dt{
+    font-weight:bold;
+    font-size:1.1em;
+    text-indent:20px;
+}
+/*ol > li {
+    word-spacing: 30px;
+    line-height: 30px
+}*/
