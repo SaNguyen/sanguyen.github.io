@@ -33,14 +33,15 @@ caption{
     font-size: 1.2em;
 }
 
-tr.weekodd{
-    background-color: silver;
-}
 
 
 .img_validator {
     width: 90px;
     height: 40px;
+}
+
+table tr:nth-child(even) {
+    background-color: silver;
 }
 
 /*
