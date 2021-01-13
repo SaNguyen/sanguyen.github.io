@@ -22,12 +22,6 @@ p#introduce{
 ul.funfact{
     font:  oblique 1em Georgia;
 }
-
-.img_validator {
-    width: 90px;
-    height: 40px;
-}
-
 a:link{
     color: #FFFF00;
 }
@@ -52,6 +46,12 @@ dt{
     font-size:1.1em;
     text-indent:20px;
 }
+
+.img_validator {
+    width: 90px;
+    height: 40px;
+}
+
 /*ol > li {
     word-spacing: 30px;
     line-height: 30px

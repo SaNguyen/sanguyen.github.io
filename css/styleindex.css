@@ -1,0 +1,51 @@
+table, td, th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+
+th{
+    text-align: center;
+    background-color: #3DAA00BA;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+td{
+    height: 100px;
+    text-align: center;
+}
+
+caption{
+    text-align: center;
+    font-size:2em;
+    font-weight:bolder;
+    height: 70px;
+}
+
+
+.weekcolumn{
+    width: 80px;
+    font-style:italic;
+    font-weight:bolder;
+    font-size: 1.2em;
+}
+
+tr.week13{
+    background-color: silver;
+}
+
+
+.img_validator {
+    width: 90px;
+    height: 40px;
+}
+
+
+/*
+table tr.theme{
+    text-align: center;
+}
+*/
