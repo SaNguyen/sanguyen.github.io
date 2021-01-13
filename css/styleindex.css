@@ -33,7 +33,7 @@ caption{
     font-size: 1.2em;
 }
 
-tr.week13{
+tr.weekodd{
     background-color: silver;
 }
 
@@ -43,6 +43,11 @@ tr.week13{
     height: 40px;
 }
 
+/*
+table:nth-child(1){
+    background-color: red;
+}
+*/
 
 /*
 table tr.theme{
