@@ -50,6 +50,7 @@ div#review_area{
     column-count: 2;
     column-gap: 2%;
     margin: auto;
+    padding: 10px;
 }
 .review_quote{
     background-color:#E8DC9B;
@@ -61,6 +62,7 @@ div#right_panel{
     margin-left:550px;
     width:250px;
     background-color:#A2B964;
+    padding-bottom: 10px;
 }
 div#movie_info{
     padding-left:10pt;
