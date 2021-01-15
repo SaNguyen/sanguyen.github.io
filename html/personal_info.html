@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title>
+    <link href="../css/personal_info.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<h1> Personal Information</h1>
+<form method="POST" action="">
+    <div class="info_item">
+        First name
+        <input name="first_name" type="text" required>
+    </div>
+    <div class="info_item">
+        Middle name (optional)
+        <input name="middle_name" type="text">
+    </div>
+    <div class="info_item">
+        Last name
+        <input name="last_name" type="text" required>
+    </div>
+    <div class="info_item">
+        Suffix (optional)
+    </div>
+    <div class="info_item">
+        Residential address line 1
+        <input name="address" type="text" required>
+    </div>
+    <div class="info_item">
+        <div class="address_item" id="address_city">
+            City
+            <input name="city" type="text" required>
+        </div>
+        <div class="address_item" id="address_state" >
+            State
+            <select name="state">
+                <option>Alaska</option>
+                <option>California</option>
+                <option>Iowa</option>
+                <option>Ohio</option>
+            </select>
+        </div>
+        <div class="address_item" id="address_zip">
+            ZIP code
+            <input name="state" type="text" pattern="^[0-9]{5}$" title="Zip code is exactly 5 digits" required>
+        </div>
+    </div>
+    <div id="clear_float"></div>
+    <div class="info_item">
+        Primary Phone Number
+        <input name="address" type="text" pattern="^\(\d{3}\) \d{3}-\d{4}$" title="Phone number follows format (123) 456-7899" required>
+    </div>
+    <div class="info_item">
+        <label><input type="radio" name="phone" value="MobilePhone" checked="checked">Mobile Phone</label>
+        <label><input type="radio" name="phone" value="HomePhone">Home Phone</label>
+    </div>
+    <div class="info_item">
+        Email address
+        <input name="email" type="text" required>
+    </div>
+    <div class="info_item">
+        Date of birth
+        <input name="birth_date" type="text" pattern="^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])-(19\d{2}|2000)$"
+               title="Date of birth from year 1900 to 2000 in valid MM/DD/YYYY format" required>
+    </div>
+    <div class="info_item">
+        SSN
+        <input name="ssn" type="text" pattern="^[0-9]{3}-[0-9]{2}-[0-9]{4}$" title="SSN is 9 digits with optional formatting like 123-45-6789" required>
+    </div>
+    <div class="info_item">
+        Credit card
+        <input name="credit_card" type="text" pattern="^[0-9]{13,19}$" title="SSN includes digits of length 13 to 19" required>
+    </div>
+
+    <div class="info_item" id="submit">
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+</body>
+</html>
+
+^(0[1-9]|1[0-2])

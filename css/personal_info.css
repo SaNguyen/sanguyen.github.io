@@ -1,0 +1,49 @@
+form{
+    border: 2px gray;
+    margin: auto;
+    width: 450px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+input[type="text"]{
+    display:block;
+    width: 400px;
+}
+
+div.info_item{
+    margin-top: 20px;
+}
+
+div.address_item{
+    float: left;
+    width: 140px;
+
+}
+.address_item input[type="text"]{
+    width: 120px;
+}
+
+select[name="state"]{
+    display:block;
+    width: 120px;
+    height: 22px;
+}
+
+div#clear_float{
+    clear: left;
+}
+
+div#submit{
+    text-align: center;
+}
+
+input[type="submit"]{
+    display: inline;
+    width: 120px;
+    height: 40px;
+    background-color: #0064FF;
+    color: #FFFFFF;
+    font-size: 14pt;
+}
