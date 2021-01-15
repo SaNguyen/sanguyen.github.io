@@ -49,7 +49,7 @@
     <div id="clear_float"></div>
     <div class="info_item">
         Primary Phone Number
-        <input name="phone" type="text" pattern="^\d{3}-?\d{2}-?\d{4}$"
+        <input name="phone" type="text" pattern="^\(?\d{3}\)?\s?\d{3}\-?\d{4}$"
                title="Phone number follows format (123) 456-7899" required>
     </div>
     <div class="info_item">
@@ -62,12 +62,13 @@
     </div>
     <div class="info_item">
         Date of birth
-        <input name="birth_date" type="text" pattern="^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])-(19\d{2}|2000)$"
+        <input name="birth_date" type="text" pattern="^(0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])\/(19\d{2}|2000)$"
                title="Date of birth from year 1900 to 2000 in valid MM/DD/YYYY format" required>
     </div>
     <div class="info_item">
         SSN
-        <input name="ssn" type="text" pattern="^\d{3}-?\d{2}-?\d{4}$" title="SSN is 9 digits with optional formatting like 123-45-6789" required>
+        <input name="ssn" type="text" pattern="^\d{3}-?\d{2}-?\d{4}$"
+               title="SSN is 9 digits with optional formatting like 123-45-6789" required>
     </div>
     <div class="info_item">
         Credit card
