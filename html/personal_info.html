@@ -49,7 +49,8 @@
     <div id="clear_float"></div>
     <div class="info_item">
         Primary Phone Number
-        <input name="address" type="text" pattern="^\(?\d{3}\)?\s?\d{3}\-?\d{4}$" title="Phone number follows format (123) 456-7899" required>
+        <input name="phone" type="text" pattern="^\d{3}-?\d{2}-?\d{4}$"
+               title="Phone number follows format (123) 456-7899" required>
     </div>
     <div class="info_item">
         <label><input type="radio" name="phone" value="MobilePhone" checked="checked">Mobile Phone</label>
@@ -66,7 +67,7 @@
     </div>
     <div class="info_item">
         SSN
-        <input name="ssn" type="text" pattern="^\d{3}\-?\d{2}\-?\d{4}$" title="SSN is 9 digits with optional formatting like 123-45-6789" required>
+        <input name="ssn" type="text" pattern="^\d{3}-?\d{2}-?\d{4}$" title="SSN is 9 digits with optional formatting like 123-45-6789" required>
     </div>
     <div class="info_item">
         Credit card
