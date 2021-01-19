@@ -36,3 +36,15 @@ button, select{
 
     font-size: 11pt;
 }
+
+#validate{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:60px;
+}
+
+.img_validator {
+    width: 60px;
+    height: 30px;
+}
