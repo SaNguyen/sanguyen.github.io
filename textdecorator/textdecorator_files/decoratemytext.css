@@ -25,7 +25,8 @@ legend {
 textarea {
 	font-family: monospace;
 	font-size: 12pt;
-	text-align: right;
+	width: 500px;
+	height: 200px;
 }
 
 button{

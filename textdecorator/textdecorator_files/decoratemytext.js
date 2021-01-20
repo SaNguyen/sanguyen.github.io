@@ -1,37 +1,45 @@
+(function(){
+	"use strict";
 
+	let decorationModule = (function(){
+		function pageLoad(){
+			let biggerElement = document.getElementById('bigger');
+			//biggerElement.onclick = biggerButtonClick;
 
-window.onload = pageLoad;
+			biggerElement.onclick = setTimer;
 
-function pageLoad(){
-	let biggerElement = document.getElementById('bigger');
-	//biggerElement.onclick = biggerButtonClick;
+			let boldElement = document.getElementById('bold');
+			boldElement.onchange = blingCheckboxClick;
+		}
 
-	biggerElement.onclick = setTimer;
+		function setTimer(){
+			let timer = setInterval(biggerButtonClick,500);
+		}
 
-	let boldElement = document.getElementById('bold');
-	boldElement.onchange = blingCheckboxClick;
-}
+		function biggerButtonClick(){
+			let textElement = document.getElementById("content");
+			//textElement.classList.add("bigger");
+			let size = getComputedStyle(textElement).fontSize;
+			size = parseInt(size) + 2 + "pt";
 
-function setTimer(){
-	let timer = setInterval(biggerButtonClick,500);
-}
+			textElement.style.fontSize = size;
+		}
 
-function biggerButtonClick(){
-	let textElement = document.getElementById("content");
-	//textElement.classList.add("bigger");
-	let size = getComputedStyle(textElement).fontSize;
-	size = parseInt(size) + 2 + "pt";
+		function blingCheckboxClick(){
+			let blingElement = document.getElementById('bold');
+			let textElement = document.getElementById("content");
+			if(blingElement.checked){
+				textElement.classList.add("bling");
+			}
+			else{
+				textElement.classList.remove("bling");
+			}
+		}
+		return {
+			pageLoad:pageLoad
+		}
+	})();
 
-	textElement.style.fontSize = size;
-}
+	window.onload = decorationModule.pageLoad;
 
-function blingCheckboxClick(){
-	let blingElement = document.getElementById('bold');
-	let textElement = document.getElementById("content");
-	if(blingElement.checked){
-		textElement.classList.add("bling");
-	}
-	else{
-		textElement.classList.remove("bling");
-	}
-}
+})();
