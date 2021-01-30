@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+
+
+    <!-- Invoke 'Generate' action to add tags or functions -->
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>My-Custom-Tags</short-name>
+    <uri>org.example.my-custom-tag</uri>
+    <tag>
+        <name>currentDateTime</name>
+        <tag-class>org.lab11.controller.CurrentDataTimeTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>color</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>size</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+
+</taglib>

@@ -1,0 +1,56 @@
+.orderList{
+    width: 800px;
+    margin: auto;
+}
+.order-image-product{
+    width: 80px;
+    height: 80px;
+}
+.order-item{
+    margin: 10px;
+}
+.checkout{
+    margin-top: 30px;
+}
+.button-check {
+    font-size: 15px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.group-button-checkout{
+    text-align: center;
+}
+
+.group-button-checkout a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.group-button-checkout a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+.image-item{
+    display: inline-block;
+    vertical-align: middle;
+}
+.title-item{
+    display: inline-block;
+    width: 300px;
+}
+
+.price-item{
+    display: inline-block;
+    width: 80px;
+}
+
+.delete-button{
+    display: inline-block;
+    width: 80px;
+}
